@@ -4,6 +4,7 @@ import Login from './Pages/Register';
 import Landing from './Pages/Landing';
 import Login1 from './Pages/Login1';
 import Splogin from './Pages/Splogin';
+import Userhome from './Pages/Userhome';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/login" Component={Login}/>
           <Route path="/Login1" Component={Login1}/>
           <Route path="/Splogin" Component={Splogin}/>
+          <Route path="/Userhome" Component={Userhome}/>
         </Routes>
       </BrowserRouter>
     </div>
