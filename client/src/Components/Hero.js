@@ -1,19 +1,26 @@
 
 
-import React from 'react';
+
 import Student from '../Images/students.jpg';
+import React, { useRef, useEffect } from 'react';
+import '../Components/style.css';
+
 
 function Hero() {
+
+
+
+
   return (
     <div>
       <section
         className="relative bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${Student})` }}
       >
-        {/* <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div> */}
-
+        
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-          <div className="max-w-xl hover:translate-y-4  hover:duration-600 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 py-6 px-7 rounded-3xl text-center flex flex-col ltr:sm:text-left rtl:sm:text-right">
+          <div 
+        className="max-w-xl slide-in hover:translate-y-4 hover:duration-600 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 py-6 px-7 rounded-3xl text-center flex flex-col ltr:sm:text-left rtl:sm:text-right">
            <div>
 
            
@@ -25,8 +32,7 @@ function Hero() {
             </h1>
 
             <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-              illo tenetur fuga ducimus numquam ea!
+              Are you looking to get Sponsored for your educational need? Need help finding scholarships?
             </p>
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-4 text-center">
