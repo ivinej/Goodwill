@@ -21,7 +21,7 @@ function Login1() {
 
       if (matchingElement) {
         console.log('Success');
-         navigate(`../Userhome`);
+         navigate(`../Studhome`);
       } else {
         console.log('Code does not match');
       }
