@@ -1,7 +1,7 @@
 import React ,{ useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import Logi from "../Images/Logi"
+// import Logi from "../Images/Logi"
 
 function Login1() {
 
@@ -77,7 +77,7 @@ function Login1() {
        </div>
     </div>
     <div>
-      <img src={Logi}/>
+      {/* <img src={Logi}/> */}
     </div>
     </div>
 
