@@ -7,6 +7,7 @@ import Splogin from './Pages/Splogin';
 import Userhome from './Pages/Userhome';
 import Studhome from './Pages/Studenthome/Studhome';
 import Nav2 from './Components/Nav2';
+import Role from './Pages/Role';
 import './App.css';
 
 function App() {
@@ -15,10 +16,17 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" Component={Landing}/>
-          <Route path="/login" Component={Login}/>
-          <Route path="/Login1" Component={Login1}/>
-          <Route path="/Splogin" Component={Splogin}/>
+          {/* <Route path="/login" Component={Login}/> */}
+          {/* <Route path="/Login1" Component={Login1}/>
+          <Route path="/Splogin" Component={Splogin}/> */}
+          <Route path="/login/role/student" element={<Login1/>} />
+          <Route path="/login/role/alumni" element={<Login1/>} />
+          <Route path="/signup/role/student" element={<Login/>} />
+          <Route path="/signup/role/alumni" element={<Login/>} />
+          <Route path="/login/role" element={<Role/>} />
+          <Route path="/signup/role" element={<Role/>} />
           <Route path="/Studhome" Component={Nav2}>
+          
           <Route path="/Studhome/sponsorships" Component={Userhome}/>
           {/* <Route path="/Studhome/internship" Component={Userhome}/>
           <Route path="/Studhome/feed" Component={Userhome}/>  */}

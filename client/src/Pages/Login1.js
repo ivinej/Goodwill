@@ -1,6 +1,7 @@
 import React ,{ useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Logi from "../Images/Logi"
 
 function Login1() {
 
@@ -45,6 +46,7 @@ function Login1() {
 
 
   return (
+    <div>
     <div className="flex justify-center items-center h-screen bg-blue-700">
         
       <div className='w-96 p-6 shadow-lg bg-white rounded-md'>
@@ -74,6 +76,11 @@ function Login1() {
         </div>
        </div>
     </div>
+    <div>
+      <img src={Logi}/>
+    </div>
+    </div>
+
   )
 }
 
