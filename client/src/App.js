@@ -9,6 +9,7 @@ import Studhome from './Pages/Studenthome/Studhome';
 import Nav2 from './Components/Nav2';
 import Role from './Pages/Role';
 import './App.css';
+import Sponal from './Pages/Sponal';
 
 function App() {
   return (
@@ -28,8 +29,8 @@ function App() {
           <Route path="/Studhome" Component={Nav2}>
           
           <Route path="/Studhome/sponsorships" Component={Userhome}/>
-          {/* <Route path="/Studhome/internship" Component={Userhome}/>
-          <Route path="/Studhome/feed" Component={Userhome}/>  */}
+          <Route path="/Studhome/internships" Component={Sponal}/>
+          {/* <Route path="/Studhome/feed" Component={Userhome}/>  */} 
           </Route>
 
         </Routes>
