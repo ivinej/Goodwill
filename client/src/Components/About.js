@@ -9,7 +9,7 @@ const About = () => {
   {id:3 , title:'Communuty' , des:"By bridging the gap between students and alumni, the community creates an environment where both parties can come together, share knowledge,and provide mentorship, and sponsorship opportunities."}]
 
   return (
-    <div className=' flex  items-center bg-yellow-100  '>
+    <div className=' flex  items-center bg-blue-400  '>
         
       {posts &&  posts.map((post)=> (
       <div className="py-10 px-16   justify-center flex-rows  " >

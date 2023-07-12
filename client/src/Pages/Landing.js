@@ -10,10 +10,13 @@ const Landing = () => {
   return (
      <div>
       <Navbar/>  
-      <Hero/> 
-      {/* <Slide/> */}
-      <About/>
+      
       <Aboutus/>
+      
+      {/* <Slide/> */}
+      
+      <Hero/> 
+      <About/>
      <Footer/>
      </div>
     
