@@ -1,8 +1,8 @@
 
-import Student from '../Images/students.jpg';
-import Kutti from '../Images/People.png'
+import Student from '../../Images/students.jpg';
+import Kutti from '../../Images/People.png'
 import React, { useRef, useEffect } from 'react';
-import '../Components/style.css';
+import '../../Components/style.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
@@ -62,7 +62,7 @@ function Hero() {
         <AnimatedText />
       </div>
       <div className="mt-10 sm:flex sm:justify-center lg:justify-start duration-700 delay-300 relative transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-        <div className="rounded-md shadow">
+        {/* <div className="rounded-md shadow">
           <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
             Get started
           </a>
@@ -71,7 +71,7 @@ function Hero() {
           <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
             Live demo
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   

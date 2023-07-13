@@ -10,6 +10,9 @@ import Nav2 from './Components/Nav2';
 import Role from './Pages/Role';
 import './App.css';
 import Sponal from './Pages/Sponal';
+import Nav3 from './Components/Nav3';
+import Feed from './Pages/Feed';
+
 
 function App() {
   return (
@@ -26,11 +29,17 @@ function App() {
           <Route path="/signup/role/alumni" element={<Login/>} />
           <Route path="/login/role" element={<Role/>} />
           <Route path="/signup/role" element={<Role/>} />
+
           <Route path="/Studhome" Component={Nav2}>
-          
           <Route path="/Studhome/sponsorships" Component={Userhome}/>
           <Route path="/Studhome/internships" Component={Sponal}/>
-          {/* <Route path="/Studhome/feed" Component={Userhome}/>  */} 
+          <Route path="/Studhome/feed" Component={Userhome}/>  
+          </Route>
+
+          <Route path="/Alumhome" Component={Nav3}>
+          <Route path="/Alumhome/sponsorships" Component={Sponal}/>
+          <Route path="/Alumhome/internships" Component={Sponal}/>
+          <Route path="/Alumhome/feed" Component={Feed}/>  
           </Route>
 
         </Routes>

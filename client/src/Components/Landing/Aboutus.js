@@ -1,6 +1,8 @@
 
 import React, { useEffect } from 'react';
-import Student from '../Images/students.jpg'
+import Student from '../../Images/students.jpg';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const Aboutus = () =>{
   return (
@@ -10,9 +12,9 @@ const Aboutus = () =>{
     style={{ backgroundImage: `url(${Student})` }}
    >
 
-<div className="relative mx-auto max-w-screen-xl  px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-          <div 
-        className="max-w-xl slide-in hover:translate-y-4 hover:duration-600 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 py-6 px-7 rounded-3xl text-center flex flex-col ltr:sm:text-left rtl:sm:text-right">
+<div className=" aos-container relative mx-auto max-w-screen-xl  px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+          <div  data-aos="fade-right" 
+        className="max-w-xl   bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 py-6 px-7 rounded-3xl text-center flex flex-col ltr:sm:text-left rtl:sm:text-right">
            <div>
 
            

@@ -11,6 +11,7 @@ async function registerUser (req, res) {
   const phoneNumber=req.body.phoneNumber;
   const email =req.body.email;
   const password =req.body.password;
+  const role=req.body.role;
 
 
   // Perform validation, sanitization, or other necessary operations on the data
@@ -21,6 +22,7 @@ async function registerUser (req, res) {
     phoneNumber,
     email,
     password,
+    role,
   };
   console.log(user)
 

@@ -14,7 +14,8 @@ const Register = () => {
           lastName: "",
           phoneNumber:"",
           email: "",
-          password:""
+          password:"",
+          role: "student",
           
         });
   
@@ -35,7 +36,11 @@ const Register = () => {
           const handleSubmit = (e) => {
               e.preventDefault();
   
-          
+           // Set the role as "student"
+            setUser((prevState) => ({
+              ...prevState,
+              role: "student"
+            }));
   
         // Make a POST request to the backend
       axios
@@ -45,7 +50,7 @@ const Register = () => {
         console.log("User creds created:", response.data);
         
        
-         navigate('../Login1');
+         navigate('/Login/role/student');
      
       })
       .catch((error) => {
